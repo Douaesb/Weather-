@@ -3,7 +3,7 @@ import axios from "axios";
 
 const Weather = () => {
   const [weatherData, setWeatherData] = useState(null);
-  const [city, setCity] = useState("");
+  const [city, setCity] = useState("safi");
   const [forecastData, setForecastData] = useState(null);
 
   const apiKey = "d729d96edb9e556d76e2882528624d82";
