@@ -87,11 +87,12 @@ const Weather = () => {
                 placeholder="Enter city name"
               />
               <button
-                className="rounded-xl bg-white opacity-60  border-2 border-black "
+                className="rounded-xl bg-white opacity-60  border-2 border-black w-fit px-6"
                 type="submit"
               >
                 Search
               </button>
+              <a href="./docs" className="text-black underline mt-4 hover:text-gray-800">View documentation</a>
             </form>
           </div>
         </div>
