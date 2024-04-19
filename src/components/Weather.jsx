@@ -87,7 +87,7 @@ const Weather = () => {
                 placeholder="Enter city name"
               />
               <button
-                className="rounded-xl bg-white opacity-60  border-2 border-black w-fit px-6"
+                className="rounded-xl bg-white opacity-60  border-2 border-black w-fit px-6 dark:text-black text-black"
                 type="submit"
               >
                 Search
@@ -132,31 +132,31 @@ const Weather = () => {
                     </g>
                   </svg>
                   <div className="flex flex-col p-2 ">
-                    <p>{weatherData.main.temp}°C</p>
-                    <p>{weatherData.weather[0].description}</p>
+                    <p className="dark:text-black text-black">{weatherData.main.temp}°C</p>
+                    <p className="dark:text-black text-black">{weatherData.weather[0].description}</p>
                   </div>
                 </div>
                 <div className="flex flex-col gap-4 w-fit card bg-white p-4 rounded-lg opacity-60 border-black border-2">
                   <div className="flex  p-2 gap-6 text-center">
-                    <span className="flex flex-col">
+                    <span className="flex flex-col dark:text-black text-black">
                       Temperature{" "}
-                      <p className="font-semibold">{weatherData.main.temp}°C</p>
+                      <p className="font-semibold dark:text-black text-black">{weatherData.main.temp}°C</p>
                     </span>
-                    <span className="flex flex-col">
+                    <span className="flex flex-col dark:text-black text-black">
                       Description{" "}
-                      <p className="font-semibold">
+                      <p className="font-semibold dark:text-black text-black">
                         {weatherData.weather[0].description}
                       </p>
                     </span>
-                    <span className="flex flex-col">
+                    <span className="flex flex-col dark:text-black text-black">
                       Humidité{" "}
-                      <p className="font-semibold">
+                      <p className="font-semibold dark:text-black text-black">
                         {weatherData.main.humidity}%
                       </p>
                     </span>
-                    <span className="flex flex-col">
+                    <span className="flex flex-col dark:text-black text-black">
                       vitesse vent{" "}
-                      <p className="font-semibold">
+                      <p className="font-semibold dark:text-black text-black">
                         {weatherData.wind.speed} m/s
                       </p>
                     </span>
